@@ -1,0 +1,90 @@
+/v1/account/register
+phone_number=15172354423
+
+/v1/account/validate_sms
+phone_number=15172354423&validate_code=742408&validate_type=register
+
+phone_number=15172354423&validate_code=228001&validate_type=change_password
+
+/v1/account/login
+phone_number=15172354423&password=123456&login_type=password
+
+phone_number=15172354423&access_token=228f61d40f0b4b363a1f28c65a020d37&login_type=access_token
+
+/v1/account/change_password_request
+phone_number=15172354423&access_token=228f61d40f0b4b363a1f28c65a020d37&login_type=access_token
+
+/v1/account/change_personal_info
+user_id=56f97338099792632c2e4e6a&access_token=50d16eaf02a6a98cfb5e1fab2aac05b8&personal_info={"nickname":"Coordinate35"}
+
+
+/v1/media/confirm
+
+file_type=audio&_id=56f3e086b6e4fcbcc9fc4fc0&access_token=ca525602c9afe57878010d7bc3f0e0db&file_id=56f7a6f5564bf598a3dc9a7b
+
+
+/v1/media/upload_request
+
+file_type=audio&_id=56f3e086b6e4fcbcc9fc4fc0&access_token=ca525602c9afe57878010d7bc3f0e0db&bucket=audio&expiration=1458890673&save_key=\/haha.avi&audio_class=basic_info&question_arr=[{"url":"http:\/\/www.baidu.com","question_content":"what \\' your name","question_order":1},{"url":"http:\/\/www.baidu.com","question_content":"what \\' your name","question_order":1},{"url":"http:\/\/www.baidu.com","question_content":"what \\' your name","question_order":1}]
+
+/v1/account/get_user_info
+
+user_id=56f97338099792632c2e4e6a&access_token=03aa29f282d18f3ec57b379c3dc95b97&target_id=56f97338099792632c2e4e6a
+
+/v1/account/upload_portrait_request.lua
+
+user_id=56f97338099792632c2e4e6a&access_token=03aa29f282d18f3ec57b379c3dc95b97&save_key=/dada/dada.img&expiration=1459204523&bucket=portrait
+
+/v1/account/upload_portrait_confirm.lua
+
+user_id=56f97338099792632c2e4e6a&access_token=03aa29f282d18f3ec57b379c3dc95b97&device_token=blabla
+
+/v1/account/refresh_device_token
+
+user_id=56f97338099792632c2e4e6a&access_token=03aa29f282d18f3ec57b379c3dc95b97&device_token=blabla
+
+/v1/procedure/get_problems
+
+user_id:56fbbe149f01a40b7a6df13c
+access_token:dbeced640f65a8cbd65e097fe182c20e
+class:basic_info
+limit:3
+
+/v1/media/upload_request
+
+audio:
+file_type=audio&sex=male&user_id=56fbbe149f01a40b7a6df13c&access_token=dbeced640f65a8cbd65e097fe182c20e&audio_class=basic_info&question_arr=[{"save_key":"http:\/\/www.baidu.com","question_id":"56fbe03a7bfe813c38efdf6e","question_order":1},{"save_key":"http:\/\/www.baidu.com","question_id":"56fbe079fb2d52827c7f41cd","question_order":2},{"save_key":"http:\/\/www.baidu.com","question_id":"56fbe091eb68bc8cb5f1e9d4","question_order":3}]
+
+video:
+
+user_id=56fbbe149f01a40b7a6df13c&access_token=dbeced640f65a8cbd65e097fe182c20e&sex=male&file_type=video&video_class=emotion_experience&questions=[{"question_id":"111111111111111111111111","question_order":1},{"question_id":"111111111111111111111111","question_order":2},{"question_id":"111111111111111111111111","question_order":3}]&save_key=www.baidu.com
+
+
+/v1/media/confirm
+
+user_id: 56fbbe149f01a40b7a6df13c
+access_token: dbeced640f65a8cbd65e097fe182c20e
+file_type: audio
+file_id: 56fc288399f161ec8c29eff1
+
+/v1/procedure/get_user_id_by_love_sex
+
+user_id: 56fbbe149f01a40b7a6df13c
+access_token: dbeced640f65a8cbd65e097fe182c20e
+love_sex: male
+
+localhost:61336/v1/procedure/get_media
+
+for video:
+user_id: 56fbbe149f01a40b7a6df13c
+access_token: dbeced640f65a8cbd65e097fe182c20e
+target_id: 56fbbe149f01a40b7a6df13c
+class: emotion_experience
+file_type: video
+
+for audio:
+user_id: 56fbbe149f01a40b7a6df13c
+access_token: dbeced640f65a8cbd65e097fe182c20e
+target_id: 56fbbe149f01a40b7a6df13c
+class: basic_info
+file_type: audio

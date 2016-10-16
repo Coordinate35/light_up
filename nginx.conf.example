@@ -1,0 +1,24 @@
+server {
+	listen 61336;
+
+	resolver 114.114.114.114;
+	server_name localhost 127.0.0.1;
+	set $root /media/d/OI/program/lightup;
+	set $db_name lightup;
+	set $mongo_host 127.0.0.1;
+	set $redis_host 127.0.0.1;
+	set $redis_port 6379;
+
+	set $phone_number_length 11;
+	set $password_downlimit 6;
+	set $password_uplimit 30;
+	set $validate_code_downlimit 100000;
+	set $validate_code_uplimit 999999;
+
+	error_log /var/log/lightup/error.log notice;
+	lua_code_cache off;
+
+	location ~ ^/v1/(.*)/?$ {
+		content_by_lua_file $root/v1/api/$1.lua;
+	}
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>light</title>
+    <link rel="stylesheet" type="text/css" href="styles/video_index.css">
+</head>
+<body>
+<!-- <header class="nav-bar">
+    <span class="nav-icon"></span>
+    <h1>LightUp</h1>
+</header> -->
+<section class="next-guest-transition">
+    <section class="loading-container">
+        <div class="loading">
+            <!--<img src="images/video_index/LightUpw@3x.png">-->
+            <!--<div class="container">-->
+            <!--<img src="images/video_index/LightUp@3x.png">-->
+            <!--</div>-->
+            <img src="images/video_index/LightUp.gif">
+        </div>
+        <p class="loading-text">
+            <span>加载中</span>
+            <span class="loading-dot">. . .</span>
+        </p>
+    </section>
+</section>
+<section class="next-guest-anim">
+    <section class="loading-container">
+        <div class="loading">
+            <!--<img src="images/video_index/LightUpw@3x.png">-->
+            <!--<div class="container">-->
+            <!--<img src="images/video_index/LightUp@3x.png">-->
+            <!--</div>-->
+            <img src="images/video_index/LightUp.gif">
+        </div>
+        <p class="loading-text">
+            <span>加载中</span>
+            <span class="loading-dot">. . .</span>
+        </p>
+    </section>
+</section>
+<section class="content-area hide">
+    <div class="user-area">
+        <!--<img class="user-potrait"></img>-->
+        <!--<div class="user-info">-->
+        <!--<p>-->
+        <!--<span class="username">Tony</span>-->
+        <!--<img src="images/video_index/ic_me_male@2x.png" class="sex">-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--<span class="age">18岁</span>-->
+        <!--<span class="sex-orientation">双性恋</span>-->
+        <!--<span class="location">湖北-武汉</span>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--<a href="javascript:;" class="share">-->
+        <!--<img src="images/ic_lightup_share@2x.png">-->
+        <!--</a>-->
+    </div>
+    <div class="audio-video-area">
+        <div id="preload-area" class="hide"></div>
+        <div class="audio-video-container">
+            <div class="audio-container">
+                <audio id="guest_audio" src=""></audio>
+                <div class="tape-container">
+                    <img src="images/video_index/tape@2x.png">
+                    <div class="tape-question">
+                        <p>
+                            <img src="images/video_index/LightUpw@2x.png">
+                            <span class="tape-question-content"></span>
+                        </p>
+                    </div>
+                    <p class="tape-runtime-content">
+                        <span class="tape-runtime-text">0</span>
+                        <span>"</span>
+                    </p>
+                    <div class="tape-runtime-container">
+                        <div class="tape-runtime-total"></div>
+                        <div class="tape-runtime"></div>
+                    </div>
+                </div>
+                <div class="audio-controls">
+                    <a href="javascript:;" id="previous-audio">
+                        <img src="images/video_index/ic_lightup_previous_control@2x.png">
+                    </a>
+                    <a href="javascript:;" id="play-pause">
+                        <img src="images/video_index/ic_lightup_playbg@2x.png">
+                        <img src="images/video_index/ic_lightup_play@2x.png" id="play-audio">
+                        <img src="images/video_index/ic_lightup_stop@2x.png" id="stop-audio" class="hide">
+                    </a>
+                    <a href="javascript:;" id="next-audio">
+                        <img src="images/video_index/ic_lightup_next_control@2x.png">
+                    </a>
+                </div>
+            </div>
+            <div class="video-container hide">
+                <video id="emotion_video" webkit-playsinline></video>
+                <video id="value_video" class="hide" webkit-playsinline></video>
+            </div>
+        </div>
+        <div class="video-info">
+            <p class="video-name">TA的个人简介</p>
+            <p class="light-info">
+                有<span class="light-count">0</span>人亮灯
+            </p>
+        </div>
+        <div class="user-operation">
+            <a href="javascript:;" id="next-guest">
+                <img src="images/video_index/ic_lightup_next@2x.png">
+                <span>下一位</span>
+            </a>
+            <a href="javascript:;" id="light-up">
+                <img src="images/video_index/ic_lightup_lightup@2x.png">
+                <span>亮灯</span>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="index-miss-container hide">
+    <div class="index-miss">
+        <div class="index-miss-icon">
+            <img src="images/video_index/pic_none_waitting@2x.png">
+        </div>
+        <div class="index-miss-info">
+            <p class="countdown">2:32:30</p>
+            <div class="miss-content-container">
+                <div class="middle-dot">
+                    <i></i>
+                </div>
+                <p class="miss-content">本时段嘉宾已经预览完毕
+                    请等待下一时段刷新
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="reminder-modal reminder-hide">-->
+<!--<p class="reminder-content">网络出现问题</p>-->
+<!--</section>-->
+<script type="text/javascript" src="scripts/lib/zepto.min.js"></script>
+<!-- <script type="text/javascript" src="tpl/build/template.js"></script> -->
+<script type="text/javascript" src="scripts/dist/video_index.js"></script>
+</body>
+</html>
